@@ -1,0 +1,24 @@
+{
+  "name": "nightwatch-demo",
+  "version": "1.0.0",
+  "description": "demo project for using nightwatchjs e2e test framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/.bin/nightwatch"
+  },
+  "keywords": [
+    "e2e",
+    "test",
+    "automation"
+  ],
+  "author": "Alexandre Castro",
+  "license": "ISC",
+  "devDependencies": {
+    "chromedriver": "^2.45.0",
+    "nightwatch": "^0.9.21",
+    "selenium-server": "^3.141.59"
+  },
+  "dependencies": {
+    "env2": "^2.2.2"
+  }
+}
