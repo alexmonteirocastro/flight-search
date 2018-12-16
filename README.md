@@ -1,2 +1,3 @@
 # flight-search
-Automnated browser tests for a flight search application
+
+Automated browser tests for a flight search application
