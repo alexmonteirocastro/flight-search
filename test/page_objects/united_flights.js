@@ -51,7 +51,6 @@ module.exports = {
   url: 'https://www.united.com/',
   elements: [
     searchForm,
-    resultsPage,
-    flightDetails
+    resultsPage
   ]
 };

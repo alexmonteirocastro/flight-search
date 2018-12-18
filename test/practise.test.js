@@ -76,7 +76,8 @@ module.exports = {
       .click('@showAllResults') // click the button to show all the results
       .waitForElementVisible('@resultList', 1000) // makes sure the results table renders
       .click('@sortByeconomy') // sorts by economy
-      .waitForElementVisible('@departure', 1000) // to make sure the departure column is rendered properly after updating the component (sorting)
+      
+      browser.waitForElementVisible('.flight-time-depart', 1000) // to make sure the departure column is rendered properly after updating the component (sorting)
 
 
       /*
@@ -131,9 +132,8 @@ module.exports = {
             })
     
             setTimeout(function(){
-              if(departures.length === res.value.length && arrivals.length === res.value.length 
-                && stops.length === res.value.length && durations.length === res.value.length && 
-                prices.length === res.value.length) {
+              if(departures.length === arrivals.length && stops.length === durations.length 
+                && prices.length === res.value.length) {
                 resolve()
               } else {
                 reject(Error('failed to scrape data'))
