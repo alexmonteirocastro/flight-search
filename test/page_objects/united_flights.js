@@ -24,7 +24,7 @@ const searchForm = {
     selector: 'button.DayPickerNavigation_rightButton__horizontal'
   },
   aug20th: {
-    selector: '//*[@id="passengersSlidingInputContainer"]/div[1]/div/div/div/div/div[2]/div/div/div[1]/div[2]/div[2]/div/div[3]/div/table/tbody/tr[4]/td[2]',
+    selector: '//*[@id="passengersSlidingInputContainer"]/div[1]/div/div/div/div/div[2]/div/div/div[1]/div[2]/div[2]/div/div[2]/div/table/tbody/tr[4]/td[2]',
     locateStrategy: 'xpath'
   },
   submitBtn: {
@@ -44,24 +44,6 @@ const resultsPage = {
   },
   sortByeconomy: {
     selector: '#column-ECONOMY .icon-sorter'
-  }
-};
-
-const flightDetails = {
-  departure: {
-    selector: '//*[@id="flight-result-list-revised"]/li[1]/div[1]/div[1]/div[1]/div[1]'
-  },
-  arrival: {
-    selector: '.flight-time-arrive'
-  },
-  connection: {
-    selector: '.flight-connection-container'
-  },
-  summary: {
-    selector: '.flight-summary-bottom'
-  },
-  lowestPrice: {
-    selector: '.lowest-Economy .visuallyhidden'
   }
 };
 
